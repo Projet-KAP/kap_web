@@ -1,0 +1,45 @@
+// Variables CSS personnalisées pour la responsivité
+:root {
+  // Facteur d'échelle global (utilisé uniquement pour les composants spécifiques)
+  --scale-factor: 1;
+  
+  // Tailles de police adaptatives
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+}
+
+// Media queries pour ajuster les variables selon la taille d'écran
+@media screen and (max-width: 1600px) {
+  :root {
+    --scale-factor: 0.95;
+    --font-size-base: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  :root {
+    --scale-factor: 0.9;
+    --font-size-base: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --scale-factor: 0.85;
+    --font-size-base: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --scale-factor: 0.8;
+    --font-size-base: 0.8rem;
+  }
+}
+
+// Classes utilitaires minimales pour la responsivité
+.responsive-text {
+  font-size: calc(var(--font-size-base) * var(--scale-factor));
+}

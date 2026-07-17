@@ -1,0 +1,129 @@
+/* AG Grid Theme personnalisé - Quartz style moderne et optimisé */
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-quartz.css';
+
+/* Variables du thème */
+.ag-theme-quartz {
+  --ag-header-height: 44px;
+  --ag-row-height: 40px;
+  --ag-font-size: 0.875rem;
+  --ag-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ag-grid-size: 4px;
+  --ag-cell-horizontal-padding: 12px;
+  --ag-background-color: #ffffff;
+  --ag-foreground-color: #1e293b;
+  --ag-header-background-color: #f8fafc;
+  --ag-header-foreground-color: #475569;
+  --ag-odd-row-background-color: #fafbfc;
+  --ag-row-hover-color: #f1f5f9;
+  --ag-selected-row-background-color: #dbeafe;
+  --ag-border-color: #e2e8f0;
+  --ag-row-border-color: #f1f5f9;
+  --ag-range-selection-border-color: #3b82f6;
+  --ag-input-focus-border-color: #3b82f6;
+}
+
+/* Header */
+.ag-theme-quartz .ag-header {
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.ag-theme-quartz .ag-header-cell {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ag-theme-quartz .ag-header-group-cell {
+  background: #475569;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  transition: none;
+}
+
+/* Désactiver l'effet hover sur les en-têtes de groupe */
+.ag-theme-quartz .ag-header-group-cell:hover {
+  background: #475569 !important;
+}
+
+/* Lignes */
+.ag-theme-quartz .ag-row {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Désactivé: effet hover trop prononcé */
+/* .ag-theme-quartz .ag-row:hover {
+  background-color: #e0f2fe;
+} */
+
+/* Cellules */
+.ag-theme-quartz .ag-cell {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #f1f5f9;
+}
+
+/* Focus cellule */
+.ag-theme-quartz .ag-cell-focus:not(.ag-cell-range-selected) {
+  border: 2px solid #3b82f6 !important;
+  outline: none;
+  background-color: #eff6ff !important;
+}
+
+/* Edition cellule */
+.ag-theme-quartz .ag-cell-inline-editing {
+  background-color: #fefce8 !important;
+  border: 2px solid #eab308 !important;
+  padding: 0 !important;
+}
+
+.ag-theme-quartz .ag-cell-inline-editing input {
+  font-size: 0.875rem;
+  padding: 8px 12px !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+/* Select dropdown */
+.ag-theme-quartz .ag-select-list {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e2e8f0;
+}
+
+.ag-theme-quartz .ag-select-list-item {
+  padding: 8px 12px;
+}
+
+.ag-theme-quartz .ag-select-list-item:hover {
+  background-color: #eff6ff;
+}
+
+.ag-theme-quartz .ag-select-list-item.ag-active-item {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Scrollbars */
+.ag-theme-quartz ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.ag-theme-quartz ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.ag-theme-quartz ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+.ag-theme-quartz ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}

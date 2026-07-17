@@ -1,0 +1,11 @@
+// Auth feature exports
+export { useAuthStore } from './stores/authStore'
+export { default as LoginView } from './views/Login.vue'
+export { default as ForgotPasswordView } from './views/ForgotPassword.vue'
+export { default as SetupPasswordView } from './views/SetupPassword.vue'
+export { default as OtpSetupView } from './views/OtpSetup.vue'
+export { default as OtpVerifyView } from './views/OtpVerify.vue'
+export { default as ChangePasswordView } from './views/ChangePassword.vue'
+export { default as LoginForm } from './components/LoginForm.vue'
+export { default as LoginCard } from './components/LoginCard.vue'
+export { default as WelcomeBanner } from './components/WelcomeBanner.vue' 
