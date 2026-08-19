@@ -35,3 +35,4 @@ coverage
 .env.development
 .env.production
 .env.*.local
+keycloak-local/

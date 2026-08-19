@@ -128,7 +128,6 @@
 
     <!-- AI Assistant Button -->
     <AIAssistantButton
-      v-if="hasData"
       @click="showAIDialog = true"
     />
 
